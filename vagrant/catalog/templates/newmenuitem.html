@@ -2,7 +2,7 @@
 
 <head>
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
-	</head>
+</head>
 <body>
 
 <h1>New Menu Item</h1>
@@ -17,7 +17,9 @@
 	<p>Price:</p>
 		<input type ='text' size='30' name='price'>
 	<p>Course:</p>
-		<input type ='radio'  name='course' value ='Appetizer'>Appetizer</br>
+	<label>
+		<input type ='radio'  name='course' value ='Appetizer' checked>Appetizer</br>
+	</label>
 		<input type ='radio'  name='course' value ='Entree'>Entree</br>
 		<input type ='radio' name='course' value ='Dessert'>Dessert</br>
 		<input type ='radio'  name='course' value ='Beverage'>Beverage</br>

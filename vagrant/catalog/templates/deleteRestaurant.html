@@ -2,7 +2,7 @@
 
 <head>
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
-	</head>
+</head>
 
 <body>
 <h1> Are you sure you want to delete {{restaurant.name}}? </h1>
@@ -11,12 +11,9 @@
 
 <input type='submit', value = 'Delete'>
 
-
-
-
 </form>
 
-<a href = '#'> Cancel </a>
+<a href = {{ url_for('showRestaurants') }}> Cancel </a>
 </body>
 
 </html>
