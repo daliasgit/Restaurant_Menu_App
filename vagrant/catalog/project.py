@@ -55,7 +55,7 @@ def fbconnect():
         response.headers['Content-Type'] = 'application/json'
         return response
     access_token = request.data
-    print (access token received %s  % access_token)
+    print("access token received %s " % access_token)
 
     app_id = json.loads(open('fb_client_secrets.json', 'r').read())[
         'web']['app_id']
@@ -217,7 +217,7 @@ def gconnect():
     output += ''' " style = "width: 300px; height: 300px;border-radius: 150px;
               -webkit-border-radius: 150px;-moz-border-radius: 150px;"> '''
     flash("you are now logged in as %s" % login_session['username'])
-    print ("done!")
+    print("done!")
     return output
 
 # User Helper Functions
